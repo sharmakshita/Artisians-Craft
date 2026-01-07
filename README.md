@@ -82,46 +82,7 @@ POST /api/cart – Add to cart
 
 GET /api/cart – View cart
 
-**Frontend Structure**
 
-bash
-Copy
-Edit
-/src
-  ├── components/
-  │   ├── Home.jsx, SignIn.jsx, SignUp.jsx, Shop.jsx, Artisians.jsx
-  │   ├── Cart.jsx, Dashboard.jsx, RegisterAsSeller.jsx, AdminDashboard.jsx
-  ├── context/AuthContext.js
-  ├── styles/ (component CSS)
-  └── App.js
-**Setup Instructions
-Frontend:**
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/artisan-ecommerce.git
-cd artisan-ecommerce
-npm install
-npm start
-Backend:
-
-bash
-Copy
-Edit
-cd backend
-npm install
-# Add to .env:
-# MONGO_URI=your-mongo-uri
-# JWT_SECRET=your-secret
-npm run dev
-**Authentication**
-
-JWT-based login
-
-AuthContext manages user session
-
-Protected routes for /dashboard, /admin
 
 **Acknowledgements**
 
